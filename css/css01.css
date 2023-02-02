@@ -9,15 +9,12 @@ and open the template in the editor.
 */
 
 body {
-  background-image: url("../img/hpbd.jpg");
   background-size: 100%;
-  background-repeat: repeat-y;
   font-family: "Fredoka One", cursive;
   color: white;
 }
 .img_banner_hpbd { 
   background-image: url("../img/3d28ae425248a05544665dd53400f52e.jpg");
-  background-repeat: no-repeat;
   background-position: left center;
   background-size: auto;
 }
@@ -27,6 +24,7 @@ h1.heading {
 .jumbotron {
   opacity: 0.4;
   filter: alpha(opacity=50); /* For IE8 and earlier */
+  margin-bottom: 0;
 }
 h4 {
   font-family: "Nunito Sans", sans-serif;
@@ -39,14 +37,22 @@ h4 {
   opacity: 0.8;
   filter: alpha(opacity=50); /* For IE8 and earlier */
 }
+.container-fluid {
+  position: relative;
+}
+.container {
+  background-image: url("../img/hpbd.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+}
 .footer {
-  height: 250px;
-  font-size: 20px;
+  font-size: 14px;
   background-color: darkblue;
   color: skyblue;
-  padding-top: 100px;
   opacity: 0.5;
-  filter: alpha(opacity=50); /* For IE8 and earlier */
+  /* filter: alpha(opacity=50); For IE8 and earlier */
 }
 .containeri {
   position: relative;
@@ -95,12 +101,3 @@ h4 {
   left: 270px;
   color: #b78690;
 }
-
-#bsw_popup{top:0;left:0;right:0;bottom:0;position:fixed;opacity:0;visibility:hidden;transition:.5s;transform:scale(1.2)}
-#bsw_popup:target{transform:scale(1);background:rgba(0,0,0,.2);opacity:1;visibility:visible;position:fixed;top:0;left:0;right:0;bottom:0;margin:0;z-index:999999999999;transition:.5s}
-.bsw_popup_{background:#fff;border-radius:4px;z-index:999;width:600px;max-width:100%;position:fixed;top:45%;left:50%;transform:translate(-50%,-50%);margin:0;padding:20px;box-sizing:border-box;box-shadow:0 0 100px rgba(0,0,0,.1)}
-.bsw_popup_ h2{margin:0 0 .75em;padding:0;text-align:center;font-weight:700;font-family:Roboto,sans-serif;color:#4267b2}
-.bsw_popup_ h3{margin:0 0 5px;padding:0;font:500 15px Roboto;text-transform:uppercase}
-.bsw_popup_ p{margin:0 0 20px;padding:0;font:400 15px Roboto;color:#555;line-height:1.5}
-.bsw_popup_ p a{font-weight:700;color:#555}
-.bsw_popup_ p a:hover{text-decoration:underline}
